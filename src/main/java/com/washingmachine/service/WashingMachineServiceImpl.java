@@ -22,4 +22,16 @@ public class WashingMachineServiceImpl {
 		return washingMachines;
 	}
 
+	public WashingMachine getWashingMachineById(int id) {
+		
+		return washingMachineRepository.findById(id).get();
+	}
+	
+	public void save(WashingMachine washingMachine) {
+		washingMachineRepository.save(washingMachine);
+	}
+	
+	public void delete(int id) {
+		washingMachineRepository.deleteById(id);
+	}
 }
