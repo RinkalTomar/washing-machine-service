@@ -28,7 +28,7 @@ public class WashingMachine {
 	private String make;
 	@Column
 	@Enumerated(EnumType.STRING)
-	private MachineStatus status;
+	private WashingMachineStatus status;
 	
 	public int getMachineId() {
 		return machineId;
@@ -54,15 +54,11 @@ public class WashingMachine {
 	public void setMake(String make) {
 		this.make = make;
 	}
-	public MachineStatus getStatus() {
+	public WashingMachineStatus getStatus() {
 		return status;
 	}
-	public void setStatus(MachineStatus status) {
+	public void setStatus(WashingMachineStatus status) {
 		this.status = status;
 	}
 	
-	
-	
-	
-
 }
