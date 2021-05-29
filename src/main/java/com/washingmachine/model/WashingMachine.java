@@ -19,7 +19,7 @@ public class WashingMachine {
 	@Id 
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", updatable = false, nullable = false)
-	private int machineId;
+	private Long machineId;
 	@Column
 	private String model;
 	@Column
@@ -30,10 +30,10 @@ public class WashingMachine {
 	@Enumerated(EnumType.STRING)
 	private WashingMachineStatus status;
 	
-	public int getMachineId() {
+	public Long getMachineId() {
 		return machineId;
 	}
-	public void setMachineId(int machineId) {
+	public void setMachineId(Long machineId) {
 		this.machineId = machineId;
 	}
 	public String getModel() {
